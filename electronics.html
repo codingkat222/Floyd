@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics - Takealot Clone</title>
+    <link rel="stylesheet" href="electronic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Takealot Clone</h1>
+            </div>
+          
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Electronics Banner -->
+    <section class="banner">
+        <div class="container">
+            <h2>Electronics</h2>
+            <p>Latest and greatest in tech</p>
+        </div>
+    </section>
+
+    <!-- Subcategories and Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-container">
+                <h3>Subcategories</h3>
+                <ul class="subcategory-list">
+                    <li><a href="#">Mobile Phones</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Cameras</a></li>
+                    <li><a href="#">Televisions</a></li>
+                    <li><a href="#">Wearables</a></li>
+                    <!-- Add more subcategories here -->
+                </ul>
+
+                <h3>Filter by</h3>
+                <div class="filter-options">
+                    <label for="price-range">Price Range:</label>
+                    <select id="price-range">
+                        <option value="0-500">R 0 - R 500</option>
+                        <option value="500-1000">R 500 - R 1,000</option>
+                        <option value="1000-5000">R 1,000 - R 5,000</option>
+                        <option value="5000+">R 5,000+</option>
+                    </select>
+
+                    <label for="brand">Brand:</label>
+                    <select id="brand">
+                        <option value="any">Any Brand</option>
+                        <option value="brand1">Brand 1</option>
+                        <option value="brand2">Brand 2</option>
+                        <option value="brand3">Brand 3</option>
+                        <!-- Add more brands here -->
+                    </select>
+
+                    <label for="rating">Rating:</label>
+                    <select id="rating">
+                        <option value="4+">4 Stars & Up</option>
+                        <option value="3+">3 Stars & Up</option>
+                        <option value="2+">2 Stars & Up</option>
+                        <option value="1+">1 Star & Up</option>
+                    </select>
+
+                    <button class="filter-button">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electronics Products -->
+    <section class="products">
+        <div class="container">
+            <h2>Featured Electronics</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="electronics1.jpg" alt="Product 1">
+                    <a href="products .html">
+                    <h3>Smartphone XYZ </h3>
+                    </a>
+                    <p>R 5,000.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="electronics2.jpg" alt="Product 2">
+                    <h3>Laptop ABC</h3>
+                    <p>R 12,999.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <!-- More electronic products... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 Takealot Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

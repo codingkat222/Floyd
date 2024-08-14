@@ -1,0 +1,335 @@
+/* General Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Product Details Section */
+.product-main {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.product-info .rating {
+    margin-bottom: 10px;
+}
+
+.product-info .rating-bar {
+    position: relative;
+    background-color: #f0f0f0;
+    height: 25px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.product-info .rating-bar .rating-fill {
+    background-color: #ffc107;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-info .price {
+    font-size: 1.8em;
+    color: #0073e6;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.product-info .description {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-actions a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-actions a:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-warranty p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.product-share {
+    margin-top: 20px;
+}
+
+.product-share p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #232f3e;
+}
+
+.product-share a {
+    color: #0073e6;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.product-share a:hover {
+    color: #005bb5;
+}
+
+/* Item Suggestions Section */
+.item-suggestions {
+    padding: 30px 0;
+}
+
+.item-suggestions h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.suggested-products {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.suggested-products .product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 24%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.suggested-products .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.suggested-products .product-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.suggested-products .product-item p {
+    font-size: 16px;
+    color: #0073e6;
+}
+
+.suggested-products .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.review .reviewer {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.review .review-rating {
+    margin-bottom: 10px;
+}
+
+.review .rating-bar {
+    position: relative;
+    background-color: #f0f0f0;
+    height: 25px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.review .rating-bar .rating-fill {
+    background-color: #ffc107;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.review .review-text {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Payment Plans Section */
+.payment-plans {
+    padding: 30px 0;
+    background-color: #f9f9f9;
+}
+
+.payment-plans h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.payment-plans p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.payment-plans ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-plans ul li {
+    font-size: 16px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Alternatives Section */
+.alternatives {
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+}
+
+.alternatives h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.alternative-products {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.alternative-products .product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 24%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alternative-products .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.alternative-products .product-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.alternative-products .product-item p {
+    font-size: 16px;
+    color: #0073e6;
+}
+
+.alternative-products .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-main {
+        flex-direction: column;
+    }
+
+    .product-info {
+        margin-top: 20px;
+    }
+
+    .suggested-products .product-item,
+    .alternative-products .product-item {
+        width: 100%;
+    }
+}

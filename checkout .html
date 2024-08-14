@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="checkout .css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart Item -->
+                <div class="cart-item">
+                    <div class="cart-item-image">
+                        <img src="product1.jpg" alt="Product 1">
+                    </div>
+                    <div class="cart-item-info">
+                        <h3>Product 1</h3>
+                        <p class="price">R 1,200.00</p>
+                        <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="increase">+</button>
+                        </div>
+                        <a href="#" class="remove-item">Remove</a>
+                    </div>
+                </div>
+                <!-- More cart items can be added here -->
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h3>Summary</h3>
+                <p class="total">Total: <span class="total-amount">R 1,200.00</span></p>
+                <a href="#" class="checkout-button">Proceed to Checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <div class="container">
+            <h2>Checkout</h2>
+            <form class="checkout-form">
+                <div class="form-group">
+                    <label for="delivery-method">Delivery Method</label>
+                    <select id="delivery-method" name="delivery-method">
+                        <option value="standard">Standard Delivery - R 50</option>
+                        <option value="express">Express Delivery - R 100</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank-transfer">Bank Transfer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="shipping-address">Shipping Address</label>
+                    <textarea id="shipping-address" name="shipping-address" rows="4" placeholder="Enter your shipping address here"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="billing-address">Billing Address</label>
+                    <textarea id="billing-address" name="billing-address" rows="4" placeholder="Enter your billing address here"></textarea>
+                </div>
+                <button type="submit" class="submit-order">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 Shopping Cart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
