@@ -71,7 +71,7 @@ header .search-bar button:hover {
 header .cart-icon {
     text-align: right;
     position: relative;
-    margin-left: 20px; /* Space between search and cart icon */
+    margin-left: 30px; /* Space between search and cart icon */
 }
 
 header .cart-icon a {
