@@ -53,6 +53,7 @@ header .search-bar input[type="text"] {
     border-radius: 4px;
     width: 100%;
     max-width: 300px;
+    margin-right: 5px; /* Reduced space between input and button */
 }
 
 header .search-bar button {
@@ -71,7 +72,7 @@ header .search-bar button:hover {
 header .cart-icon {
     text-align: right;
     position: relative;
-    margin-left: 30px; /* Space between search and cart icon */
+    margin-left: 20px; /* Space between search and cart icon */
 }
 
 header .cart-icon a {
