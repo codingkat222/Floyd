@@ -11,84 +11,48 @@
     margin: auto;
 }
 
-/* Header Styling */
+/* /* Header styling */
 header {
     background-color: #232f3e;
     color: #fff;
-    padding: 15px 0;
+    padding: 15px 20px; /* Added padding on the left and right sides */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #f08804;
-}
-
-header .logo h1 {
-    margin-left: 20px;
-    font-size: 2em;
-    font-weight: bold;
-    color: #fff;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-header nav ul li {
-    margin: 0 15px;
     position: relative;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #f08804;
+    z-index: 1000;
     border-bottom: 2px solid #f08804;
 }
 
-header .search-bar {
+header .header-icons {
     display: flex;
     align-items: center;
+    gap: 20px; /* Adjust gap between icons */
+    width: 100%;
 }
 
-header .search-bar input {
-    padding: 8px;
-    width: 250px;
-    border: 2px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    font-size: 1em;
-}
-
-header .search-bar button {
-    padding: 8px 15px;
-    background-color: #febd69;
-    color: #232f3e;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
+header .header-icons h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0;
 }
 
-header .search-bar button:hover {
-    background-color: #f08804;
-    transform: scale(1.05);
+header .header-icons a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
 }
 
-header .search-bar button i {
-    margin-left: 5px;
+header .header-icons a:hover {
+    color: #f08804;
 }
+
+
+
 
 /* Cart Section */
 .cart {
@@ -339,4 +303,5 @@ footer .social-icons a:hover {
 footer p {
     margin-top: 10px;
     font-size: 0.9em;
-}
+    }
+    
