@@ -1,4 +1,46 @@
 /* General Reset and Layout */
+
+header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 15px 0;
+    border-bottom: 2px solid #f08804;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .back-button,
+header .search-button,
+header .options-button {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+header .header-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Increase this value for more space */
+}
+
+
+header .back-button:hover,
+header .search-button:hover,
+header .options-button:hover {
+    color: #f08804;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,92 +53,461 @@
     margin: auto;
 }
 
-/* Header Styling */
-header {
-    background-color: #232f3e;
-    color: #fff;
-    padding: 15px 20px;
+/* Product Details Section */
+.product-main {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
-    border-bottom: 2px solid #f08804;
-}
-
-header .header-icons {
-    display: flex;
-    align-items: center;
     gap: 20px;
-    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
-header .header-icons h1 {
-    flex-grow: 1;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0;
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-header .header-icons a {
-    color: #fff;
-    font-size: 1.5em;
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.product-info .rating {
+    margin-bottom: 10px;
+}
+
+.product-info .rating-bar {
+    position: relative;
+    background-color: #f0f0f0;
+    height: 25px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.product-info .rating-bar .rating-fill {
+    background-color: #ffc107;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-info .price {
+    font-size: 1.8em;
+    color: #0073e6;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.product-info .description {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-actions a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0073e6;
+    color: white;
     text-decoration: none;
-    padding: 5px;
-    transition: color 0.3s ease-in-out;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-header .header-icons a:hover {
-    color: #f08804;
+.product-actions a:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Cart Section */
-.cart h2 {
-    font-size: 2.2em;
+.product-warranty p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.product-share {
+    margin-top: 20px;
+}
+
+.product-share p {
+    margin: 0 0 10px;
+    font-size: 16px;
     color: #232f3e;
-    text-align: center;
-    margin-bottom: 30px;
 }
 
-/* Checkout Section */
-.checkout h2 {
-    font-size: 2.2em;
+.product-share a {
+    color: #0073e6;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.product-share a:hover {
+    color: #005bb5;
+}
+
+/* Item Suggestions Section */
+.item-suggestions {
+    padding: 30px 0;
+}
+
+.item-suggestions h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
     color: #232f3e;
-    text-align: center;
-    margin-bottom: 30px;
+    font-weight: 700;
 }
 
-/* Footer Styling */
-footer p {
-    font-size: 1em;
+.suggested-products {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.suggested-products .product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 24%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.suggested-products .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.suggested-products .product-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.suggested-products .product-item p {
+    font-size: 16px;
+    color: #0073e6;
+}
+
+.suggested-products .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.review .reviewer {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.review .review-rating {
+    margin-bottom: 10px;
+}
+
+.review .rating-bar {
+    position: relative;
+    background-color: #f0f0f0;
+    height: 25px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.review .rating-bar .rating-fill {
+    background-color: #ffc107;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.review .review-text {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Payment Plans Section */
+.payment-plans {
+    padding: 30px 0;
+    background-color: #f9f9f9;
+}
+
+.payment-plans h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.payment-plans p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.payment-plans ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-plans ul li {
+    font-size: 16px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Alternatives Section */
+.alternatives {
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+}
+
+.alternatives h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.alternative-products {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.alternative-products .product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 24%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alternative-products .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.alternative-products .product-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #232f3e;
+    font-weight: 700;
+}
+
+.alternative-products .product-item p {
+    font-size: 16px;
+    color: #0073e6;
+}
+
+.alternative-products .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header .header-icons h1 {
-        font-size: 1.5em;
-    }
-    
-    .cart h2, .checkout h2 {
-        font-size: 1.8em;
+    .product-main {
+        flex-direction: column;
     }
 
-    footer p {
-        font-size: 0.9em;
+    .product-info {
+        margin-top: 20px;
+    }
+
+    .suggested-products .product-item,
+    .alternative-products .product-item {
+        width: 100%;
     }
 }
+/* Product Specifications Section */
+.product-specifications {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-@media (max-width: 480px) {
-    header .header-icons h1 {
-        font-size: 1.2em;
+.product-specifications h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #232f3e;
+    font-weight: 700;
+    text-align: center;
+}
+
+.specifications-table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.specification {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spec-label {
+    font-weight: 600;
+    color: #232f3e;
+}
+
+.spec-value {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .specifications-table {
+        padding: 0 10px;
+    }
+
+    .specification {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .spec-label {
+        margin-bottom: 5px;
+    }
+}
+/* Payment Plans Section */
+.payment-plans {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-plans h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #232f3e;
+    font-weight: 700;
+    text-align: center;
+}
+
+.payment-plan-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.payment-plan-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-plan-card h3 {
+    font-size: 1.8em;
+    color: #232f3e;
+    margin-bottom: 10px;
+}
+
+.payment-plan-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-details:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.payment-plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-plan-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
     }
     
-    .cart h2, .checkout h2 {
-        font-size: 1.6em;
-    }
-
-    footer p {
-        font-size: 0.8em;
-    }
-    }
