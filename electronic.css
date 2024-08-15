@@ -1,5 +1,3 @@
-
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -22,37 +20,22 @@ header {
     padding: 15px 0;
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header .logo h1 {
     margin: 0;
     font-size: 24px;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px 10px;
-}
-
-header nav ul li a:hover {
-    background-color: #003366;
-    border-radius: 4px;
-}
-
 header .search-bar {
     display: flex;
     align-items: center;
+    flex-grow: 1;
+    margin-left: 20px;
 }
 
 header .search-bar input[type="text"] {
@@ -60,7 +43,8 @@ header .search-bar input[type="text"] {
     border: none;
     border-radius: 4px;
     margin-right: 10px;
-    width: 250px;
+    width: 100%;
+    max-width: 400px;
 }
 
 header .search-bar button {
@@ -74,6 +58,30 @@ header .search-bar button {
 
 header .search-bar button:hover {
     background-color: #005bb5;
+}
+
+header .cart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+}
+
+header .cart-icon a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header .cart-icon .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
 }
 
 /* Banner Styles */
@@ -221,51 +229,5 @@ header .search-bar button:hover {
 }
 
 /* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer .footer-links ul li {
-    margin: 0 15px;
-}
-
-footer .footer-links ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-footer .footer-links ul li a:hover {
-    text-decoration: underline;
-}
-
-footer .social-icons {
-    margin: 15px 0;
-}
-
-footer .social-icons a {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-footer .social-icons a:hover {
-    color: #0073e6;
-}
-
-footer p {
-    font-size: 14px;
-    margin: 10px 0 0;
-}
+footer 
+    
