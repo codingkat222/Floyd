@@ -33,7 +33,6 @@ header .cart-icon {
 }
 
 header .logo {
-    flex-grow: 1;
     text-align: left;
 }
 
@@ -72,6 +71,7 @@ header .search-bar button:hover {
 header .cart-icon {
     text-align: right;
     position: relative;
+    margin-left: 20px; /* Space between search and cart icon */
 }
 
 header .cart-icon a {
@@ -270,5 +270,17 @@ footer .social-icons {
 }
 
 footer .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
 
-    
+footer .social-icons a:hover {
+    color: #0073e6;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 10px 0 0;
+}
