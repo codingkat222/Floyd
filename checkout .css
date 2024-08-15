@@ -11,11 +11,11 @@
     margin: auto;
 }
 
-/* /* Header styling */
+/* Header Styling */
 header {
     background-color: #232f3e;
     color: #fff;
-    padding: 15px 20px; /* Added padding on the left and right sides */
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,21 +27,21 @@ header {
 header .header-icons {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adjust gap between icons */
+    gap: 20px;
     width: 100%;
 }
 
 header .header-icons h1 {
     flex-grow: 1;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     margin: 0;
 }
 
 header .header-icons a {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-decoration: none;
     padding: 5px;
     transition: color 0.3s ease-in-out;
@@ -51,15 +51,7 @@ header .header-icons a:hover {
     color: #f08804;
 }
 
-
-
-
 /* Cart Section */
-.cart {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-}
-
 .cart h2 {
     font-size: 2.2em;
     color: #232f3e;
@@ -67,129 +59,7 @@ header .header-icons a:hover {
     margin-bottom: 30px;
 }
 
-.cart-items {
-    margin-bottom: 30px;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cart-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.cart-item-image img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 5px;
-}
-
-.cart-item-info {
-    flex: 1;
-    padding: 0 20px;
-}
-
-.cart-item-info h3 {
-    font-size: 1.2em;
-    color: #232f3e;
-}
-
-.cart-item-info .price {
-    font-size: 1.1em;
-    color: #0073e6;
-}
-
-.cart-item-info .quantity {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.cart-item-info .quantity button {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.cart-item-info .quantity button:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-}
-
-.cart-item-info .quantity input {
-    width: 50px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.cart-item-info .remove-item {
-    display: inline-block;
-    margin-top: 10px;
-    color: #ff4d4d;
-    font-size: 0.9em;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.cart-item-info .remove-item:hover {
-    text-decoration: underline;
-    color: #e60000;
-}
-
-.cart-summary {
-    text-align: right;
-}
-
-.cart-summary h3 {
-    font-size: 1.5em;
-    color: #232f3e;
-    margin-bottom: 15px;
-}
-
-.cart-summary .total {
-    font-size: 1.3em;
-    color: #0073e6;
-    margin-bottom: 20px;
-}
-
-.cart-summary .checkout-button {
-    background-color: #f08804;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.cart-summary .checkout-button:hover {
-    background-color: #d87a01;
-    transform: scale(1.05);
-}
-
 /* Checkout Section */
-.checkout {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
 .checkout h2 {
     font-size: 2.2em;
     color: #232f3e;
@@ -197,110 +67,36 @@ header .header-icons a:hover {
     margin-bottom: 30px;
 }
 
-.checkout-form {
-    max-width: 800px;
-    margin: auto;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.checkout-form .form-group {
-    margin-bottom: 20px;
-}
-
-.checkout-form .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 1.1em;
-    color: #333;
-}
-
-.checkout-form .form-group select,
-.checkout-form .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: box-shadow 0.3s ease;
-}
-
-.checkout-form .form-group select:focus,
-.checkout-form .form-group textarea:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.checkout-form .form-group textarea {
-    resize: vertical;
-}
-
-.checkout-form .submit-order {
-    background-image: linear-gradient(45deg, #f08804, #d87a01);
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto 0;
-    text-align: center;
-    transition: background-image 0.3s ease, transform 0.2s ease;
-}
-
-.checkout-form .submit-order:hover {
-    background-image: linear-gradient(45deg, #d87a01, #f08804);
-    transform: scale(1.05);
-}
-
 /* Footer Styling */
-footer {
-    background: linear-gradient(135deg, #232f3e, #1b2631);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    font-size: 0.9em;
-}
-
-footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer .footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-footer .footer-links ul li a:hover {
-    color: #f08804;
-}
-
-footer .social-icons {
-    margin: 20px 0;
-}
-
-footer .social-icons a {
-    color: #fff;
-    font-size: 1.5em;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-    color: #f08804;
-}
-
 footer p {
-    margin-top: 10px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .header-icons h1 {
+        font-size: 1.5em;
+    }
+    
+    .cart h2, .checkout h2 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .header-icons h1 {
+        font-size: 1.2em;
+    }
+    
+    .cart h2, .checkout h2 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+    }
