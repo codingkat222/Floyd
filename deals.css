@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Header Styles */
+/* Header styling */
+header {
+    background-color: #004d99;
+    color: #fff;
+    padding: 15px 20px; /* Added padding on the left and right sides */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    border-bottom: 2px solid #f08804;
+}
+
+header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust gap between icons */
+    width: 100%;
+}
+
+header .header-icons h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header .header-icons a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+header .header-icons a:hover {
+    color: #f08804;
+}
+
+/* Adjust Heading Sizes and Layout Responsiveness */
+
+/* Default font sizes for large screens */
+header .header-icons h1 {
+    font-size: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .header-icons h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .header-icons h1 {
+        font-size: 1.2em;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+.search-bar input {
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+    width: 90%; /* Adjust width percentage as needed */
+    max-width: 1000px; /* Set a max width if needed */
+    margin: 0 auto; /* Center the container */
+}
+
+
+/* Deal Section Styles */
+.deals-category {
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.deals-category h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    color: #004d99;
+}
+
+.deal-slider {
+    display: flex;
+    overflow-x: auto;
+}
+
+.deal-item {
+    min-width: 200px;
+    margin-right: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.deal-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.view-more {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+}
