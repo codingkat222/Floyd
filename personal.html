@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Personal Details</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="personal-details">
+            <h2>Update Your Details</h2>
+            <form id="details-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="number" value="+1234567890">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="johndoe@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="********">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="save-btn">Save Changes</button>
+                    <button type="button" id="reset-btn">Reset to Default</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="personal.js"></script>
+</body>
+</html>

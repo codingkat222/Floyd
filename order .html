@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Order Details</h1>
+        </div>
+    </header>
+
+    <main class="order-container">
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="order-info">
+                <p><strong>Order Number:</strong> #123456</p>
+                <p><strong>Order Date:</strong> August 15, 2024</p>
+                <p><strong>Delivery Address:</strong> 123 Main St, Anytown, USA</p>
+                <p><strong>Payment Method:</strong> Credit Card</p>
+                <p><strong>Delivery Method:</strong> Standard Shipping</p>
+            </div>
+        </section>
+
+        <section class="order-items">
+            <h2>Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wireless Headphones</td>
+                        <td>$99.99</td>
+                    </tr>
+                    <tr>
+                        <td>Bluetooth Speaker</td>
+                        <td>$49.99</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="order-costs">
+                <p><strong>Item Fee:</strong> $149.98</p>
+                <p><strong>Delivery Fee:</strong> $10.00</p>
+                <p><strong>Total Cost:</strong> $159.98</p>
+            </div>
+        </section>
+
+        <section class="order-dates">
+            <h2>Order Dates</h2>
+            <p><strong>Ordered Date:</strong> August 15, 2024</p>
+            <p><strong>Payday Date:</strong> August 15, 2024</p>
+        </section>
+
+        <section class="reschedule">
+            <h2>Reschedule Delivery</h2>
+            <label for="reschedule-date">Choose a new delivery date:</label>
+            <input type="date" id="reschedule-date">
+            <button onclick="rescheduleDelivery()">Set New Date</button>
+        </section>
+
+        <section class="tracking">
+            <h2>Track Order</h2>
+            <div class="tracking-info">
+                <p><strong>Order Date:</strong> August 15, 2024</p>
+                <p><strong>Shipped Day:</strong> August 16, 2024</p>
+                <p><strong>Delivered Day:</strong> August 18, 2024</p>
+                <p><strong>Updates:</strong> In transit</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

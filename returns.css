@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #1e2a38;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f08804;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.return-request-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.return-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #1e2a38;
+    border-bottom: 2px solid #f08804;
+    padding-bottom: 10px;
+}
+
+.return-info {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.info-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-item p {
+    margin: 0;
+}
+
+.info-item strong {
+    color: #1e2a38;
+}
+
+.info-item span {
+    color: #555;
+}
